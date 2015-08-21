@@ -100,7 +100,31 @@ From the foundations to the roofs:
 
 \item scitbx: mathematics, non-crystallographic physics (rigid body)
 \begin{itemize}
+\item n-dimensional arrays, bridge with NumPy
 \item linear algebra, special functions, non-linear least-squares
+\end{itemize}
+\item cctbx: common crystallography
+\begin{itemize}
+\item structure factors computation, and their derivatives
+\item space group toolbox
+\item Fourier transforms
+\end{itemize}
+\item smtbx: constraints
+\begin{itemize}
+\item structure factors computation and derivatives
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Modules}
+Based on cctbx:
+\begin{itemize}
+\item rstbx: indexing and integration of diffraction images
+\item xfel: X-ray free-electron lasers
+\item crys3d, gltbx: tools to write GUI displaying 3D objects (structures, Fourier maps)
+\begin{itemize}
+\item $\longrightarrow$ Phenix
 \end{itemize}
 \end{itemize}
 \end{frame}
@@ -136,4 +160,19 @@ matrix.rec(elems=(4, 4, 4), n=(3,1))
 \end{minted}
 Used a lot.
 \end{frame}
+
+\begin{frame}[fragile]
+\frametitle{And now, ladies and gentlement, the main feature!}
+
+Let's triple the unit cell of a structure.
+
+Why, oh, why?
+
+Phase transition: unit cell before the transition $(a, b, c, 90, 90, 90)$, and after $(3a, b, 3c, 90, 90, 90)$.
+
+To compare the two structures, it is useful to put the first one in a tripled unit cell, keeping the same symmetries.
+
+
+\end{frame}
+
 \end{document}
