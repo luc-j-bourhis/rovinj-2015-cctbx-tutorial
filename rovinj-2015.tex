@@ -72,18 +72,20 @@ from cctbx import sgtbx
 \begin{frame}[fragile]
 \frametitle{Downloads}
 \begin{itemize}
-\item Source and binary packages: \url{http://cci.lbl.gov/cctbx_build/} \\
+\item This tutorial: slides, code and data\\\url{https://github.com/luc-j-bourhis/rovinj-2015-cctbx-tutorial}\item Source and binary packages: \url{http://cci.lbl.gov/cctbx_build/} \\
       Not very up-to-date anymore but it will do for this tutorial!
       \begin{itemize}
-      \item Linux: choose CentOS 6.2 (64-bit) even if you don't wear a red hat
-      \item Windows 7 (64-bit) or Windows XP (32-bit)
+      \item Linux: choose CentOS 6.2 (64-bit) even if you don't wear a red hat\\
+            \verb!source cctbx_build/setpaths.sh!
+      \item Windows 7 (64-bit) or Windows XP (32-bit)\\
+            \verb!cctbx_build/setpaths.bat!
+      \item \verb!cctbx.python my_script.py!
       \end{itemize}
 \item Source code repository (version control): 
 \begin{itemize} 
 \item Currently hosted on Sourceforge
 \item Plans to move to Github soon-ish
 \end{itemize}
-\item This tutorial: slides, code and data\\\url{https://github.com/luc-j-bourhis/rovinj-2015-cctbx-tutorial}
 \end{itemize}
 \end{frame}
 
@@ -91,14 +93,12 @@ from cctbx import sgtbx
 \frametitle{Modules}
 From the foundations to the roofs:
 \begin{itemize}
-\item libtbx: essential but behind the scene
-\item boost\_adaptbx: Python $\leftrightarrow$ C++ bridge framework
+\item Python $\leftrightarrow$ C++ bridge
 \begin{itemize}
 \item Python is slow but convenient
 \item C++ is fast but cumbersome
-\item Boost.Python is a bridge between them
+\item Boost.Python is a bridge between them and boost\_adaptbx rules it
 \end{itemize}
-
 \item scitbx: mathematics, non-crystallographic physics (rigid body)
 \begin{itemize}
 \item n-dimensional arrays, bridge with NumPy
