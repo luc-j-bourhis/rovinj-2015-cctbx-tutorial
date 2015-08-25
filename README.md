@@ -5,3 +5,6 @@ The cctbx is a Python library providing tools for the whole crystallographic wor
 
 The participants should have a decent knowledge of unit cells and space groups. Some experience of Python is recommended.
 
+This tutorial was given at the school "Advanced Software Development for Crystallographers", 20th-22nd of August 2015, in Rovinj, Croatia.
+
+
